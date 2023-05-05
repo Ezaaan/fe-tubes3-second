@@ -49,12 +49,13 @@ function App() {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         }
-      }).then(response => response.json())
+      })
 
       setData(fetched.history);
       setDef(fetched);
     }
     dataFetch();
+    console.log("hasil fetched")
     console.log(data);
   }, []);
 
