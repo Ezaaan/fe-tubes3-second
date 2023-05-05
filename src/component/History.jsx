@@ -29,7 +29,7 @@ function History({chatHistory}) {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         }
-      }).json();
+      }).then(response => response.json())
 
       setData(fetched.history);
     }

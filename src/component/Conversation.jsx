@@ -15,7 +15,7 @@ function Conversation({chatID, triggerSignal}) {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       }
-    }).json();
+    }).then(response => response.json())
 
     setData(fetched.chats);
     //console.log("CONVERSATION ID: " + chatID)
