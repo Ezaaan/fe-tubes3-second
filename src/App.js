@@ -49,7 +49,7 @@ function App() {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         }
-      })
+      }).json();
 
       setData(fetched.history);
       setDef(fetched);
