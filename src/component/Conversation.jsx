@@ -10,12 +10,7 @@ function Conversation({chatID, triggerSignal}) {
   const[trigger, setTrigger] = useState(triggerSignal)
 
   const dataFetch = async () => {
-    const fetched = await (await fetch(API), {
-      Headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    }).json();
+    const fetched = await (await fetch(API)).json();
 
     setData(fetched.chats);
     //console.log("CONVERSATION ID: " + chatID)

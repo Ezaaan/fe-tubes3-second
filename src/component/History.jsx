@@ -24,12 +24,7 @@ function History({chatHistory}) {
 
   useEffect(() => {
     const dataFetch = async () => {
-      const fetched = await (await fetch(API), {
-        Headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      }).json();
+      const fetched = await (await fetch(API)).json();
 
       setData(fetched.history);
     }
