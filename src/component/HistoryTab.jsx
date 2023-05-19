@@ -7,7 +7,7 @@ function HistoryTab({HistoryData, historyDesc}) {
   const navigate = useNavigate()
   const navigateLink = "/" + HistoryData.id
   const homeLink = "/"
-  const API = "https://cors-anywhere.herokuapp.com/https://backend-production-8cd5.up.railway.app/chat/" + HistoryData.id + "/delete_chat"
+  const API = "https://backend-production-8cd5.up.railway.app/chat/" + HistoryData.id + "/delete_chat"
 
   const deleteRequest = async() => {
     //console.log("fetch history before")
