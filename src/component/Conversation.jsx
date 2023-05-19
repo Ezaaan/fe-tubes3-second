@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function Conversation({chatID, triggerSignal}) {
   // const [file, getFile] = useState
   const[data, setData] = useState('');
-  const API = 'https://backend-production-8cd5.up.railway.app/chat/' + chatID
+  const API = 'https://cors-anywhere.herokuapp.com/https://backend-production-8cd5.up.railway.app/chat/' + chatID
   const[trigger, setTrigger] = useState(triggerSignal)
 
   const dataFetch = async () => {

@@ -16,7 +16,7 @@ function InputBar({chatID, algo, triggerSignal}) {
   const handleKeyDown = (event) => {
     const current = new Date();
     const currentTime = current.toLocaleTimeString("en-US");
-    const API = "https://backend-production-8cd5.up.railway.app/chat/" + chatID + "/post_chat"
+    const API = "https://cors-anywhere.herokuapp.com/https://backend-production-8cd5.up.railway.app/chat/" + chatID + "/post_chat"
     if(event.key === 'Enter') {
       fetch(API, {
         method: 'POST',

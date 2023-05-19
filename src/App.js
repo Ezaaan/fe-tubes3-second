@@ -30,7 +30,7 @@ function App() {
   const[def, setDef] = useState([]);
   const[req, setReq] = useState('');
   //const API = 'http://localhost:3000/ChatHistory'
-  const API = 'https://backend-production-8cd5.up.railway.app/chat'
+  const API = 'https://cors-anywhere.herokuapp.com/https://backend-production-8cd5.up.railway.app/chat'
   
   // const {template} = useData(API);
   // const {data} = template.history;

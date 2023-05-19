@@ -7,7 +7,7 @@ function Sidebar({chatHistory, algorithm}) {
   const[algo, setAlgo] = useState('');
   const[data, setData] = useState([]);
 
-  const API = 'https://backend-production-8cd5.up.railway.app/chat'
+  const API = 'https://cors-anywhere.herokuapp.com/https://backend-production-8cd5.up.railway.app/chat'
   const APIput = API + '/add_chat'
   const fetchHistory = () => {
     fetch(API).then((res) => {
