@@ -20,7 +20,7 @@ const reducer = (state, action) => {
 function History({chatHistory}) {
   const[data, setData] = useState([]);
   const[state, dispatch] = useReducer(reducer, initialState)
-  const API = 'chat'
+  const API = 'https://backend-production-8cd5.up.railway.app/chat'
 
   useEffect(() => {
     const dataFetch = async () => {
